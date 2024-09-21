@@ -1,6 +1,6 @@
 id: org.damask_multiphysics.DAMASK_mesh
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: DAMASK_mesh
 finish-args:
