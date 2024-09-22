@@ -48,6 +48,11 @@
     </screenshot>
   </screenshots>
 
+  <branding>
+    <color type="primary" scheme_preference="light">#5da1ff</color>
+    <color type="primary" scheme_preference="dark">#133b6f</color>
+  </branding>
+
   <releases>
     <release version="3.0.0" date="2024-07-22">
       <description>
