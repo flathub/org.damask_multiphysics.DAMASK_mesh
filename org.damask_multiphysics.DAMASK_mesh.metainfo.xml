@@ -37,6 +37,22 @@
 
   <content_rating type="oars-1.1" />
 
+  <screenshots>
+    <screenshot type="default">
+      <caption>Shell output</caption>
+      <image>https://raw.githubusercontent.com/flathub/org.damask_multiphysics.DAMASK_mesh/master/screenshots/screenshot_CLI.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Material configuration</caption>
+      <image>https://raw.githubusercontent.com/flathub/org.damask_multiphysics.DAMASK_mesh/master/screenshots/screenshot_material.png</image>
+    </screenshot>
+  </screenshots>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#5da1ff</color>
+    <color type="primary" scheme_preference="dark">#133b6f</color>
+  </branding>
+
   <releases>
     <release version="3.0.0" date="2024-07-22">
       <description>
