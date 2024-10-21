@@ -23,11 +23,11 @@ modules:
       - --with-hdf5-fortran-bindings=1
     sources:
       - type: archive
-        url: https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.21.4.tar.gz
-        sha256: a9ae076d4617c7d84ce2bed37194022319c19f19b3930edf148b2bc8ecf2248d
+        url: https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.22.0.tar.gz
+        sha256: 2c03f7c0f7ad2649240d4989355cf7fb7f211b75156cd7d424e1d9dd7dfb290b
       - type: file
-        url: https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.3.tar.gz
-        sha256: 3e12160dd1d6f5cd8897bbab63a05fb9223a1e20a1726db23607aac25dc1aa19
+        url: https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.5.tar.gz
+        sha256: 5cbefa0780b84f4126743c40cdd6a334b2f0574cd7fd95050fb1ac0ddbb7f0b8
       - type: file
         url: https://bitbucket.org/petsc/pkg-fblaslapack/get/v3.4.2-p3.tar.gz
         sha256: 644629f3559bf7ecdb8d01975131f982b15da823a39c5df4fa5764a4a5e9b34a
@@ -54,8 +54,8 @@ modules:
       - install -Dm644 org.damask_multiphysics.DAMASK_mesh.svg -t /app/share/icons/hicolor/scalable/apps/
     sources:
       - type: archive
-        url: https://damask-multiphysics.org/download/damask-3.0.0.tar.xz
-        sha256: aaebc65b3b10e6c313132ee97cfed427c115079b7e438cc0727c5207e159019f
+        url: https://damask-multiphysics.org/download/damask-3.0.1.tar.xz
+        sha256: 3db1231f6763356e71b3bb91f66f1abb4fdae2721ce85754fc468446f3d74882
       - type: file
         path: org.damask_multiphysics.DAMASK_mesh.metainfo.xml
       - type: file
