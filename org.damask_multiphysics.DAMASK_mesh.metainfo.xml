@@ -54,6 +54,17 @@
   </branding>
 
   <releases>
+    <release version="3.0.1" date="2024-10-18">
+      <description>
+        <p>Release description</p>
+          <ul>
+            <li>bugfix: restored compatibility for NumPy &lt; 1.20</li>
+            <li>bugfix: correct blending for misorientation calculation</li>
+            <li>bugfix: bugfix: "from_parallel" consistent with "from_basis" in Rotation class</li>
+            <li>support for PETSc 3.23.x</li>
+          </ul>
+      </description>
+    </release>
     <release version="3.0.0" date="2024-07-22">
       <description>
         <p>Release description</p>
