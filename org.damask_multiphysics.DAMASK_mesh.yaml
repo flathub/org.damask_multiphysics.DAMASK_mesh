@@ -23,8 +23,8 @@ modules:
       - --with-hdf5-fortran-bindings=1
     sources:
       - type: archive
-        url: https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.22.0.tar.gz
-        sha256: 2c03f7c0f7ad2649240d4989355cf7fb7f211b75156cd7d424e1d9dd7dfb290b
+        url: https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.22.2.tar.gz
+        sha256: 83624de0178b42d37ca1f7f905e1093556c6919fe5accd3e9f11d00a66e11256
       - type: file
         url: https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.5.tar.gz
         sha256: 5cbefa0780b84f4126743c40cdd6a334b2f0574cd7fd95050fb1ac0ddbb7f0b8
