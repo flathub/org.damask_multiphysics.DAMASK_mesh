@@ -61,7 +61,7 @@
           <li>bugfix: restored compatibility for NumPy &lt; 1.20</li>
           <li>bugfix: correct blending for misorientation calculation</li>
           <li>bugfix: bugfix: "from_parallel" consistent with "from_basis" in Rotation class</li>
-          <li>support for PETSc 3.23.x</li>
+          <li>support for PETSc 3.22.x</li>
         </ul>
       </description>
     </release>
