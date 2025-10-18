@@ -1,6 +1,6 @@
 id: org.damask_multiphysics.DAMASK_mesh
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: DAMASK_mesh
 finish-args:
@@ -20,20 +20,24 @@ modules:
       - --download-openmpi=1
       - --download-fblaslapack=1
       - --download-hdf5=1
+      - --download-zlib=1
       - --with-hdf5-fortran-bindings=1
     sources:
       - type: archive
-        url: https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.22.2.tar.gz
-        sha256: 83624de0178b42d37ca1f7f905e1093556c6919fe5accd3e9f11d00a66e11256
+        url: https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.23.7.tar.gz
+        sha256: f4fb2bad8c80319e723987868e87d8384f2ae2162e07917d4c41d6e467b1d254
       - type: file
-        url: https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.5.tar.gz
-        sha256: 5cbefa0780b84f4126743c40cdd6a334b2f0574cd7fd95050fb1ac0ddbb7f0b8
+        url: https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.7.tar.gz
+        sha256: 67435fdb2560f897882e69fead171d38e7f44a6dfe1d3c90506f549a943050b8
       - type: file
         url: https://bitbucket.org/petsc/pkg-fblaslapack/get/v3.4.2-p3.tar.gz
         sha256: 644629f3559bf7ecdb8d01975131f982b15da823a39c5df4fa5764a4a5e9b34a
       - type: file
         url: https://web.cels.anl.gov/projects/petsc/download/externalpackages/hdf5-1.14.3-p1.tar.bz2
         sha256: ec0da2dd048b4933603e810e1a341ba497a1e0b464dc3118549f38307945ff6c
+      - type: file
+        url: https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz
+        sha256: 9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23
 
   - name: libfyaml_damask_mesh
     buildsystem: autotools
@@ -54,8 +58,8 @@ modules:
       - install -Dm644 org.damask_multiphysics.DAMASK_mesh.svg -t /app/share/icons/hicolor/scalable/apps/
     sources:
       - type: archive
-        url: https://damask-multiphysics.org/download/damask-3.0.1.tar.xz
-        sha256: 3db1231f6763356e71b3bb91f66f1abb4fdae2721ce85754fc468446f3d74882
+        url: https://damask-multiphysics.org/download/damask-3.0.2.tar.xz
+        sha256: 82f9b3aefde87193c12a7c908f42b711b278438f6cad650918989e37fb6dbde4
       - type: file
         path: org.damask_multiphysics.DAMASK_mesh.metainfo.xml
       - type: file

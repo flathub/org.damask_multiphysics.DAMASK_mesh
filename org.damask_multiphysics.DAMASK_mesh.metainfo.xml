@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2024 Martin Diehl -->
+<!-- Copyright 2024-2025 Martin Diehl -->
 <component type="console-application">
   <id>org.damask_multiphysics.DAMASK_mesh</id>
 
@@ -54,6 +54,20 @@
   </branding>
 
   <releases>
+    <release version="3.0.2" date="2025-06-09">
+      <description>
+        <p>Release description</p>
+        <ul>
+          <li>bugfix: correct calculation of Div/Grad/Curl in Result class</li>
+          <li>bugfix: correct selection of interaction parameters for cF</li>
+          <li>bugfix: correct calculation of hue difference in Colormap class</li>
+          <li>support for PETSc 3.23.x</li>
+          <li>support for GFortran 15.x</li>
+          <li>support for MSC.Marc 2024.1 and 2024.2</li>
+          <li>new and improved example parameters</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.1" date="2024-10-18">
       <description>
         <p>Release description</p>
