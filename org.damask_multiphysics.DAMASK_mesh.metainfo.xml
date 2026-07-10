@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2024-2025 Martin Diehl -->
+<!-- Copyright 2024-2026 Martin Diehl -->
 <component type="console-application">
   <id>org.damask_multiphysics.DAMASK_mesh</id>
 
@@ -20,7 +20,7 @@
       DAMASK is a unified multi-physics crystal plasticity simulation package. The solution of continuum mechanical boundary value problems requires a constitutive response that connects deformation and stress at each material point. This problem is solved in DAMASK on the basis of crystal plasticity using a variety of constitutive models and homogenization approaches. However, treating mechanics in isolation is no longer sufficient to study emergent advanced high-strength materials. In these materials, deformation happens interrelated with displacive phase transformation, significant heating, and potential damage evolution. Therefore, DAMASK is capable of handling multi-physics problems. Following a modular approach, additional field equations are solved in a fully coupled way using a staggered approach.
     </p>
     <p>
-      The mesh solver (DAMASK_mesh) operates on unstructured meshes.
+      The mesh solver (damask_mesh) operates on unstructured meshes.
     </p>
   </description>
 
@@ -54,6 +54,46 @@
   </branding>
 
   <releases>
+    <release version="3.1.0" date="2026-07-09">
+      <description>
+        <p>Release description</p>
+        <ul>
+          <li>bugfix (grid solver, spectral_polarization): F_aim was stored for restart instead of P_aim</li>
+          <li>bugfix (MSC.Marc): parsing of input file failed when using domain decomposition</li>
+          <li>bugfix (processing, Rotation): Schmid matrix rotation was inverted</li>
+          <li>bugfix (processing, Result): output of datasets with same name but different shape failed</li>
+          <li>feature (grid solver): added solver variant for mechanics: spectral_galerkin</li>
+          <li>feature (grid solver): added functionality to simulate diffusion</li>
+          <li>feature (grid solver): enable setting of temperature boundary conditions</li>
+          <li>feature (grid solver): enable restart without existing result file</li>
+          <li>feature (grid solver): enable restart from increment 0</li>
+          <li>feature (mesh solver): allow to prescribe target displacement in load case definition</li>
+          <li>feature (mesh solver): allow to prescribe force boundary conditions on nodes</li>
+          <li>feature (mesh solver): support named mesh element groups in load case definition</li>
+          <li>feature (mesh solver): support for quad and hex meshes</li>
+          <li>feature (processing, grid_filters): enable regridding for combined stretch and shear deformation</li>
+          <li>feature (processing, Result): added function to calculate resolved shear stress in the Result class</li>
+          <li>usage (dislotwin): output twinning shear instead of twinned volume fraction</li>
+          <li>usage (grid solver): use prefix modifier, e.g. dot_F instead of F_dot</li>
+          <li>usage (grid solver): consistently use singular terms, i.e. boundary_condition</li>
+          <li>usage (mesh and grid solver): executable names are all lowercase</li>
+          <li>usage (mesh and grid solver): support for command completion on bash and zsh</li>
+          <li>usage (mesh solver): improved convergence and iteration reporting</li>
+          <li>compatibility: support libfyaml 0.9.1 to 0.9.6</li>
+          <li>compatibility (grid and mesh solver): support PETSc 3.25.x (minimum is now 3.19.x)</li>
+          <li>compatibility (grid and mesh solver): increased minimum GCC version to 12.1</li>
+          <li>compatibility (grid and mesh solver): dropped support for Intel Parallel Studio XE in favor of Intel oneAPI</li>
+          <li>compatibility (MSC.Marc): support MSC.Marc 2025.1 and 2025.2</li>
+          <li>compatibility (MSC.Marc): build with libfyaml</li>
+          <li>compatibility (processing): increased minimum Python version to 3.10</li>
+          <li>compatibility (processing): read DREAM3D 8.0 files</li>
+          <li>compatibility (processing): abandon use of multiprocessing module</li>
+          <li>misc (grid solver): optional use of C++/Boost for CLI handling and VTI file read</li>
+          <li>misc (processing): improved performance of several pre- and post-processing routines</li>
+          <li>misc: new and improved material parameters</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.2" date="2025-06-09">
       <description>
         <p>Release description</p>
